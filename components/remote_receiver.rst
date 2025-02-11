@@ -40,6 +40,7 @@ Configuration variables:
   - **canalsat**: Decode and dump CanalSat infrared codes.
   - **canalsatld**: Decode and dump CanalSatLD infrared codes.
   - **coolix**: Decode and dump Coolix infrared codes.
+  - **daikin**: Decode and dump Daikin infrared codes.
   - **dish**: Decode and dump Dish infrared codes.
   - **dooya**: Decode and dump Dooya RF codes.
   - **drayton**: Decode and dump Drayton Digistat RF codes.
@@ -153,6 +154,9 @@ Automations:
   is passed to the automation for use in lambdas.
 - **on_coolix** (*Optional*, :ref:`Automation <automation>`): An automation to perform when a
   Coolix remote code has been decoded. A variable ``x`` of type :apiclass:`remote_base::CoolixData`
+  is passed to the automation for use in lambdas.
+- **on_daikin** (*Optional*, :ref:`Automation <automation>`): An automation to perform when a
+  Daikin remote code has been decoded. A variable ``x`` of type :apistruct:`remote_base::DaikinData`
   is passed to the automation for use in lambdas.
 - **on_dish** (*Optional*, :ref:`Automation <automation>`): An automation to perform when a
   dish network remote code has been decoded. A variable ``x`` of type :apistruct:`remote_base::DishData`

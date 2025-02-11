@@ -298,6 +298,23 @@ Configuration variables:
   see dumper output for more info.
 - All other options from :ref:`remote_transmitter-transmit_action`.
 
+.. _remote_transmitter-transmit_daikin:
+
+``remote_transmitter.transmit_daikin`` **Action**
+
+This :ref:`action <config-action>` sends a Daikin code to a remote transmitter. The 20-bits of header and 8-bits of checksum are added automatically.
+
+.. code-block:: yaml
+
+    on_...:
+      - remote_transmitter.transmit_daikin:
+          data: [0x00, 0x61, 0x32, 0x00, 0xB0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xC5, 0x00, 0x08]
+
+Configuration variables:
+
+- **data** (**Required**, list): The data to send.
+- All other options from :ref:`remote_transmitter-transmit_action`.
+
 .. _remote_transmitter-transmit_dish:
 
 ``remote_transmitter.transmit_dish`` **Action**

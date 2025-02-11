@@ -206,6 +206,7 @@
     "remote_transmitter.transmit_canalsat",
     "remote_transmitter.transmit_canalsatld",
     "remote_transmitter.transmit_coolix",
+    "remote_transmitter.transmit_daikin",
     "remote_transmitter.transmit_dish",
     "remote_transmitter.transmit_dooya",
     "remote_transmitter.transmit_drayton",
